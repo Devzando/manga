@@ -21,10 +21,8 @@ a {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: brown;
     display:flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
@@ -48,26 +46,25 @@ a {
     color: white;
 }
 
-
 /*itens */
 
 .container .container-itens {
-    height: auto;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
 }
 
 .container .container-itens .item {
-    width: 18%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
-}
-.container .container-itens .item:nth-child(2) {
-    width: 40%;
    
 }
 
@@ -81,28 +78,26 @@ a {
 /* texts */
 
 .container .container-itens .item .text-item {
-    text-align: center;
     font-family: Comic Sans MS;
     font-style: italic;
     font-size: 3rem;
     color: white;
     margin-top: 20px;
-
 }
 
 /*buttons */
 
 .container .container-buttons {
+    position: absolute;
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    top: 450px;
 }
 
 .container .container-buttons .button {
     background: transparent;
     border: none;
 }
-.container .container-buttons .button .navigateitens{
-    margin-bottom: -100px;
-}
+
 
